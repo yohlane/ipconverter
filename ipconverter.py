@@ -8,7 +8,7 @@ def convert(x, f):
         'h': lambda x: hex(x),
         'o': lambda x: re.sub('o', '',oct(x))
     }[f](x))
-help = lambda: print('ipconverter.py ip [format]\nFormat: d,b,h or o\n ex: ./ipconverter.py 127.0.0.1 o.h => 0177.0x1')
+help = lambda: print('./ipconverter.py ip [format]\nFormat: d,b,h or o\n ex: ./ipconverter.py 127.0.0.1 o.h => 0177.0x1')
 if(len(sys.argv)!=3 and len(sys.argv)!=2):
     help()
     sys.exit(2)
